@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WINX - Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at center, #0f0c29, #302b63, #24243e);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .glow-frame {
+      display: inline-block;
+      padding: 30px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #0ff, #f0f);
+      box-shadow: 0 0 30px #0ff, 0 0 60px #f0f, 0 0 100px #0ff;
+      animation: pulse 4s infinite ease-in-out;
+    }
+
+    .glow-frame img {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 20px #0ff, 0 0 40px #f0f, 0 0 60px #0ff;
+      }
+      50% {
+        box-shadow: 0 0 40px #f0f, 0 0 80px #0ff, 0 0 120px #f0f;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="equipo.html">  Quienes somos</a>
+    <a href="curriculum.html">Currículum</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <div class="container">
+    <div class="glow-frame">
+      <img src="winx.png" alt="WINX Logo" />
+    </div>
+  </div>
+
+</body>
+</html>
